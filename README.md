@@ -129,19 +129,8 @@ TerImageSharp.exe ./party.gif --info
 
 ## How it works
 
-```
-image file
-    │
-    ▼
-ImageSharp decode ──▶ (multi-frame? ──▶ animation loop, per-frame timing)
-    │
-    ▼
-terminal capability detection ──▶ Kitty or Sixel
-    │
-    ├── Kitty ──▶ raw RGBA ──▶ base64 chunks ──▶ APC escape sequences (true color, real alpha)
-    │
-    └── Sixel ──▶ median-cut quantize ──▶ Floyd–Steinberg dither ──▶ 6-row band encoding + RLE ──▶ DECSIXEL
-```
+![Map](map.png)
+
 
 | File | Responsibility |
 |---|---|
