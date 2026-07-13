@@ -32,7 +32,7 @@
 ## Preview
 
 ```
-$ TerImageSharp.exe ./photo.png
+$ TerImageSharp.exe ./image.png
 ```
 
 ![Screenshot](screenshot.png)
@@ -51,7 +51,7 @@ dotnet build -c Release
 Run it:
 
 ```bash
-TerImageSharp.exe ./photo.png
+TerImageSharp.exe ./image.png
 ```
 
 > **Windows users:** run this inside **Windows Terminal** (`wt.exe`). Classic `cmd.exe` / conhost does not implement Sixel at all, no matter what the code does — Windows Terminal does.
